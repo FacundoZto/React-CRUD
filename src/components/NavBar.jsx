@@ -1,6 +1,5 @@
 import {Navbar, Container, Nav} from 'react-bootstrap';
 import {Link} from 'react-router-dom';
-
 import { BiHome } from "react-icons/bi";
 
 const NavBar = () => {
@@ -19,6 +18,7 @@ const NavBar = () => {
 	    <Nav className="me-auto">
 	      <Link className='nav-link' to='/new'>Nuevo</Link>
 	    </Nav>
+	    <h5 style={{color:'white'}}>Venta de motos</h5>
 	    </Container>
 	  </Navbar>
 		)
