@@ -9,6 +9,11 @@ const reducer = (state=initialState, action) =>{
 				...state,
 				products: action.payload
 			}
+		case 'DELETE_POST':
+			return{
+				...state,
+				products: state.products.filter(el => el.id !== action.payload)
+			}
 		default:
 			return{
 				...state

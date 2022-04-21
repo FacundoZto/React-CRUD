@@ -6,7 +6,7 @@ const NavBar = () => {
 	return(
 		<Navbar bg="success opacity-75" variant="dark">
 	    <Container fluid>
-	    <Link to='/home' className='navbar-brand'>
+	    <Link to='/' className='navbar-brand'>
 	      	<BiHome style={{
 	      		fontSize: '23px', 
 	      		position: 'relative', 
@@ -16,7 +16,7 @@ const NavBar = () => {
 	      	}} />
 	     </Link>
 	    <Nav className="me-auto">
-	      <Link className='nav-link' to='/new'>Nuevo</Link>
+	      <Link className='nav-link' to='/new'>Publicar</Link>
 	    </Nav>
 	    <h5 style={{color:'white'}}>Venta de motos</h5>
 	    </Container>

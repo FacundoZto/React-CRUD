@@ -25,12 +25,12 @@
       "image": "https://suzuki.com.co/sites/default/files/2020-12/ROJOMATE.png"
     },
     {
-    	"id": 4,
-    	"trademark": "Suzuki",
-    	"model": "2021",
-    	"reference": "NEW BEST 125 FI",
-    	"price": "500000",
-    	"image": "https://suzuki.com.co/sites/default/files/2021-03/SUZUKI%20NEW%20BEST%20125%20NEGRA-min.png"
+      "id": 4,
+      "trademark": "Suzuki",
+      "model": "2021",
+      "reference": "NEW BEST 125 FI",
+      "price": "500000",
+      "image": "https://suzuki.com.co/sites/default/files/2021-03/SUZUKI%20NEW%20BEST%20125%20NEGRA-min.png"
     },
     {
       "id": 5,
@@ -79,7 +79,14 @@
       "reference": "Iron 883",
       "price": "U$ 50000",
       "image": "https://www.motorcycle.com/blog/wp-content/uploads/2018/02/020218-2018-harley-davidson-iron-883.jpg"
+    },
+    {
+      "trademark": "Honda",
+      "model": "2022",
+      "reference": "crf 450 r",
+      "image": "https://www.motofichas.com/images/cache/01-honda-crf450r-2021-estudio-739-a.jpg",
+      "price": "6000000",
+      "id": 11
     }
   ]
 }
-

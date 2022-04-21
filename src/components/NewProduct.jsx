@@ -1,8 +1,13 @@
 import {Container, Form} from 'react-bootstrap'
 import {useState} from 'react';
+import {publish} from '../redux/actions.jsx';
+import {useDispatch} from 'react-redux';
+import Swal from 'sweetalert2';
+import { useNavigate } from 'react-router-dom';
 
 const NewProduct = () => {
 
+	const dispatch = useDispatch();
 	const [data, setData] = useState({
 		trademark: '',
 		model: '',
@@ -10,6 +15,7 @@ const NewProduct = () => {
 		image: '',
 		price: ''
 	});
+	let navigate = useNavigate();
 
 	const handleChange = (e) => {
 		e.preventDefault();
@@ -20,9 +26,30 @@ const NewProduct = () => {
 		})
 	};
 
-	const handleSubmit = (e) => {
+	const handleSubmit = async (e) => {
 		e.preventDefault();
-		console.log('enviado')
+		let response = await dispatch(publish(data));
+		if(response.status === 201) {
+			Swal.fire(
+			  'Publicación realizada',
+			  'Tu aviso ha sido publicado',
+			  'success'
+			)
+			navigate('/');
+		}else{
+			Swal.fire({
+			  icon: 'error',
+			  title: 'Error',
+			  text: 'No se ha podido publicar el aviso'
+			})
+		}
+		setData({
+			trademark: '',
+			model: '',
+			reference: '',
+			image: '',
+			price: ''
+		})
 	}
 
 	return(

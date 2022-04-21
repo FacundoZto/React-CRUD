@@ -10,7 +10,7 @@ const ProductList = () => {
 
 	useEffect(() => {
 		dispatch(getProducts())
-	}, [dispatch])
+	}, [dispatch, products])
 
 	return(
 		<Container className='mt-5 mb-4'>
@@ -18,7 +18,8 @@ const ProductList = () => {
 			{
 				products && products.map(e => (
 					<CardProduct
-						key={e.id} 
+						key={e.id}
+						id={e.id} 
 						image={e.image}
 						model={e.model}
 						price={e.price}
