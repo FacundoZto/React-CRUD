@@ -6,4 +6,4 @@
 <img src="./img/react-crud-create.png"   widht='50%' height='20%' />
 <img src="./img/react-crud-delete.png"   widht='50%' height='20%' />
 <img src="./img/react-crud-delete2.png"  widht='50%' height='20%' />
-
+<img src="./img/react-crud-update.png"  widht='50%' height='20%' />
