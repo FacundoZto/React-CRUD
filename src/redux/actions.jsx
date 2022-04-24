@@ -41,3 +41,18 @@ export const deletePost = (id) => {
 		}
 	}
 }
+
+export const updatePost = (post) => {
+	return async (dispatch) => {
+		try{
+			const response = await axios.put(`${url}/${post.id}`, post);
+			dispatch({
+				type: 'UPDATE_POST',
+				payload: response.data
+			})
+			return response;
+		}catch(err){
+			console.log(err);
+		}
+	}
+}

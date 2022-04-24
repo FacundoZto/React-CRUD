@@ -13,7 +13,7 @@
       "trademark": "Yamaha",
       "model": "2020",
       "reference": "Bws X Fi",
-      "price": "5000000",
+      "price": "750000",
       "image": "https://yamaha-mundoyamaha.com/wp-content/uploads/2020/07/BwsxFi_color_naranja-v2.png"
     },
     {
@@ -37,7 +37,7 @@
       "trademark": "Kawasaki",
       "model": "2021",
       "reference": "Z1000",
-      "price": "U$ 50000",
+      "price": "7000000",
       "image": "https://content2.kawasaki.com/ContentStorage/KMA/Products/10896/1fa38132-0f5a-4f98-a488-6efe65029e4e.jpg"
     },
     {
@@ -61,15 +61,15 @@
       "trademark": "Honda",
       "model": "2021",
       "reference": "Africa Twin",
-      "price": "U$ 45000",
+      "price": "6000000",
       "image": "https://www.pautravelmoto.com/wp-content/uploads/2019/09/honda-africa-twin-1000-pautravelmoto.jpg"
     },
     {
       "id": 9,
       "trademark": "Honda",
-      "model": "2021",
+      "model": "2015",
       "reference": "Tornado",
-      "price": "600000",
+      "price": "400000",
       "image": "https://motos.honda.com.ec/uploads/galeria/detalle-xr250.jpg"
     },
     {
@@ -77,16 +77,8 @@
       "trademark": "Harley Davidson",
       "model": "2021",
       "reference": "Iron 883",
-      "price": "U$ 50000",
-      "image": "https://www.motorcycle.com/blog/wp-content/uploads/2018/02/020218-2018-harley-davidson-iron-883.jpg"
-    },
-    {
-      "trademark": "Honda",
-      "model": "2022",
-      "reference": "crf 450 r",
-      "image": "https://www.motofichas.com/images/cache/01-honda-crf450r-2021-estudio-739-a.jpg",
       "price": "6000000",
-      "id": 11
+      "image": "https://www.motorcycle.com/blog/wp-content/uploads/2018/02/020218-2018-harley-davidson-iron-883.jpg"
     }
   ]
 }

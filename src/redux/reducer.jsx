@@ -14,6 +14,12 @@ const reducer = (state=initialState, action) =>{
 				...state,
 				products: state.products.filter(el => el.id !== action.payload)
 			}
+		case 'UPDATE_POST':
+			let obj = action.payload
+			return{
+				...state,
+				products: state.products.map(el => el.id === action.payload.id ? {...el, obj} : el)
+			}
 		default:
 			return{
 				...state

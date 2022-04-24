@@ -39,6 +39,12 @@ const CardProduct = (props) => {
 		})
 	};
 
+	//UPDATE/EDIT PRODUCT
+	const handleEdit = () => {
+		props.handleOpen();
+		props.setDataModal(props.moto);
+	}
+
 	return(
 		<div className='col-md-4 mb-3'>
 			<Card>
@@ -47,10 +53,10 @@ const CardProduct = (props) => {
 				<Card.Body>
 					<ListGroup>
 						<ListGroupItem><strong>Modelo: </strong>{props.model}</ListGroupItem>
-						<ListGroupItem><strong>Price: </strong>{props.price}</ListGroupItem>
+						<ListGroupItem><strong>Precio: </strong>{props.price}</ListGroupItem>
 					</ListGroup>
 					<div className='mt-2 text-end'>
-					<button className='btn btn-outline-success me-2' >Editar</button>
+					<button className='btn btn-outline-success me-2' onClick={handleEdit} >Editar</button>
 					<button className='btn btn-outline-danger ' onClick={handleDelete} >Eliminar</button>
 					</div>
 				</Card.Body>
